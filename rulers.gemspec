@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["rachel960122@hotmail.com"]
 
   spec.summary       = %q{A Rack based web framework}
-  spec.description   = %q{A Rack based web framework}
+  spec.description   = %q{A Rack based web framework but better}
   spec.homepage      = "http://github.com/rachel960122/rebuild_rails.git"
   spec.license       = "MIT"
 
@@ -20,11 +20,11 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   if spec.respond_to?(:metadata)
-    # spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com' to prevent pushes to rubygems.org, or delete to allow pushes to any server."
+    spec.metadata['allowed_push_host'] = ""
   end
 
   spec.add_development_dependency "bundler", "~> 1.8"
   spec.add_development_dependency "rake", "~> 10.0"
 
-  gem.add_runtime_dependency "rack"
+  spec.add_runtime_dependency "rack"
 end
